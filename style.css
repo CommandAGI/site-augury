@@ -1,0 +1,36 @@
+:root {
+  --paper: #f4f0e8;
+  --ink: #1c1f26;
+  --muted: #545a66;
+  --rule: #c9c2b4;
+  --card: #faf7f1;
+  --accent: #2f4f7f;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #14171d; --ink: #e7e3da; --muted: #a8aab0; --rule: #343a45; --card: #1b1f27; --accent: #9db8e6; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 18px/1.55 "Iowan Old Style", Palatino, Georgia, serif; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+a { color: var(--accent); }
+.top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; padding-top: 24px; padding-bottom: 14px; border-bottom: 2px solid var(--ink); }
+.mark { color: var(--ink); text-decoration: none; font-size: 26px; font-variant: small-caps; letter-spacing: 0.08em; }
+.tag { color: var(--muted); font-size: 15px; }
+.hero { display: grid; grid-template-columns: 1fr; gap: 24px; padding: 40px 0 8px; align-items: center; }
+@media (min-width: 720px) { .hero { grid-template-columns: 3fr 2fr; } }
+h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.1; margin: 0 0 16px; font-weight: normal; }
+.lede { font-size: 20px; color: var(--muted); margin: 0; }
+.plot { margin: 0; color: var(--accent); max-width: 280px; justify-self: center; }
+.plot svg { width: 100%; height: auto; }
+.plot figcaption { color: var(--muted); font-size: 14px; text-align: center; }
+h2 { font-size: 24px; font-weight: normal; border-top: 1px solid var(--rule); padding-top: 24px; margin: 40px 0 16px; }
+h3 { font-size: 19px; margin: 0 0 8px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--rule); border-top: 3px solid var(--accent); padding: 16px; }
+.card p { margin: 0; color: var(--muted); font-size: 16px; }
+.note { color: var(--muted); font-size: 15px; }
+.steps { padding-left: 1.2em; }
+.steps li { margin: 8px 0; }
+.foot { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 12px; padding-bottom: 32px; color: var(--muted); font-size: 15px; }

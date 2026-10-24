@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Augury, forecasts you can check</title>
+<meta name="description" content="Augury gives a probability on your question, with the records it rests on. Each forecast is committed before the outcome is known, and scored in public when it resolves.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; script-src 'none'">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wrap top">
+  <a class="mark" href="index.html">Augury</a>
+  <span class="tag">Forecasting &middot; a company of CommandAGI</span>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <h1>Forecasts you can check.</h1>
+      <p class="lede">Augury gives a probability on your question, with the records it rests on. Each forecast is committed before the outcome is known, and scored in public when it resolves.</p>
+    </div>
+    <figure class="plot" role="img" aria-label="A calibration plot: forecast probability against how often it came true, with the diagonal a perfectly calibrated forecaster follows. No forecast is plotted yet.">
+      <svg viewBox="0 0 220 220" aria-hidden="true">
+        <rect x="30" y="10" width="180" height="180" fill="none" stroke="currentColor" stroke-width="1"/>
+        <line x1="30" y1="190" x2="210" y2="10" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4"/>
+        <g stroke="currentColor" stroke-width="0.6" opacity="0.4"><line x1="30" y1="100" x2="210" y2="100"/><line x1="120" y1="10" x2="120" y2="190"/></g>
+        <text x="120" y="210" text-anchor="middle" font-size="11" fill="currentColor">forecast</text>
+        <text x="14" y="100" text-anchor="middle" font-size="11" fill="currentColor" transform="rotate(-90 14 100)">came true</text>
+      </svg>
+      <figcaption>The calibration plot fills as forecasts resolve.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="services">
+    <h2 id="services">What we do</h2>
+    <div class="cards">
+      <article class="card"><h3>A forecast on your question</h3><p>A probability with the records it rests on, committed before the outcome, and its score when it resolves.</p></article>
+      <article class="card"><h3>A risk watch</h3><p>Questions on a market, a supply chain or a region, forecast again as new records arrive, with a notice when a probability moves past your threshold.</p></article>
+      <article class="card"><h3>A track-record audit</h3><p>A check of a forecaster's record: each forecast against when it was committed, its outcome and its score.</p></article>
+    </div>
+    <p class="note">Prices: ask for a quote.</p>
+  </section>
+
+  <section aria-labelledby="kept">
+    <h2 id="kept">How a forecast is kept</h2>
+    <ol class="steps">
+      <li><strong>The question</strong> says what will happen, by when, and the public source that will settle it.</li>
+      <li><strong>The commitment.</strong> The forecast is a sealed record, and its seal is anchored before the outcome, so anyone can check that it was made first and never changed.</li>
+      <li><strong>The score.</strong> When the question resolves, the outcome and its source are recorded, and the forecast is scored.</li>
+      <li><strong>The calibration plot</strong> shows every resolved forecast, the wrong ones too.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="record">
+    <h2 id="record">Track record</h2>
+    <p>No forecast has resolved yet.</p>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p>A forecast is a probability with its sources, not investment, legal or insurance advice.</p>
+  <p>Augury is a company of <a href="https://commandagi.com">CommandAGI</a>, beside Worldline, Glyphloom, Fumbl and Yardstick.</p>
+</footer>
+</body>
+</html>
